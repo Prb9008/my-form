@@ -1,20 +1,19 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';  // Import this
 import { AppComponent } from './app.component';
+import { LoginFormComponent } from './basicForm/login-form/login-form.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginFormComponent  // Declare your component here
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    ReactiveFormsModule  // Add this to imports
   ],
-  providers: [
-    provideClientHydration()
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
