@@ -1,0 +1,12 @@
+/* Styles for red border on invalid inputs */
+input.ng-invalid.ng-touched, select.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
+    border: 1px solid red;
+  }
+  /* Adjust the width of text boxes */
+input[type="text"], input[type="number"], textarea {
+    width: 50%; /* Set the width to 50% */
+  }
+  
+  #date {
+    width: 50%; /* Set the width to 50% */
+  }
